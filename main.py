@@ -10,7 +10,6 @@ except Exception as e:
     st.error("API key error!.")
     st.stop()
 
-# --- KROK 2: Interfejs użytkownika ---
 st.set_page_config(layout="wide")
 st.title("🤖 AI PDF note maker")
 
@@ -82,6 +81,8 @@ if uploaded_files:
 
             except Exception as e:
                 st.error(f"AI communication error: {e}")
+
+                #push
 
 if 'result_ai' in st.session_state:
     st.markdown("---")
